@@ -1,0 +1,32 @@
+apply plugin: 'java'
+
+version = ''
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+dependencies {
+    compile files('libs/VDABCore.jar' )
+ }
+ 
+ //Get dependencies from Maven central repository
+repositories {
+    mavenCentral()
+}
+
+task vdabPackage(dependsOn: [build]){
+	doLast {
+		def jarFiles = file('./libs').listFiles()
+		jarFiles.each {File nextFile ->
+		println ">>>>> Found needed jar file = $nextFile.name"
+		}
+		copy {
+			from 'libs'
+			from 'build/libs'
+			into 'pkg/ext'
+			exclude 'VDABCore.jar'
+		}
+		ant.zip(destfile: 'PKG_NagiosNodes.zip'){
+			fileset (dir: 'pkg')
+		}
+	}
+}
