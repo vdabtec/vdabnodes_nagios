@@ -3,7 +3,7 @@
 <nodedef name="NagiosService" class="vdab.extnodes.nagios.NagiosService" >
     <attr name="ConsumedEventTypes">Trigger,Event</attr>
     <attr name="PublishedEventTypes">String,Number</attr>
-    <attr name="NodeOverview">RUNS a Nagios plugin and returns alerts and metric data when available.</attr>
+    <attr name="NodeOverview">RUNS a Nagios plugin and returns alerts and metric data when available. </attr>
     <attr name="NodeDescTemplate"> ${CommandName}</attr>
     <attr name="NodeQuality" >Beta</attr>  
  	<datadef name="PluginDirectory">
