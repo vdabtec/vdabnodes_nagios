@@ -47,5 +47,6 @@ task vdabPackage(dependsOn: [build]){
 		ant.zip(destfile: 'PKG_NagiosNodes.zip'){
 			fileset (dir: 'pkg')
 		}
+		delete "libs/VDABCore.jar"
 	}
 }
