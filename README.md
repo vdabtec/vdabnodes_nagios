@@ -17,6 +17,10 @@ through the additional information provided by the plugin.
 <li>VDAB adds the ability to archive the metric data for later analysis.
 </ul>
 
+
+### Licensing
+Use of this software is subject to restrictions of the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt).
+
 ### Loading the the Package
 The current or standard version can be loaded directly using the VDAB Android Client following the directions
 for [Adding Packages](https://vdabtec.com/vdab/docs/VDABGUIDE_AddingPackages.pdf) 
