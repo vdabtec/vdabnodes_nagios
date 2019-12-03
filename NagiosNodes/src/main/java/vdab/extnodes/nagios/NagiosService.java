@@ -30,6 +30,7 @@ import com.lcrc.af.datatypes.AFFile;
 import com.lcrc.af.file.AFFileUtility;
 import com.lcrc.af.file.FileUtility;
 import com.lcrc.af.service.CommandService;
+import com.lcrc.af.util.IconUtility;
 
 public class NagiosService extends CommandService  {
 	static {
@@ -50,7 +51,7 @@ public class NagiosService extends CommandService  {
 	
 
 	public Integer get_IconCode(){
-		return IconCategory.NODE_NAGIOS;
+		return IconUtility.getIconHashCode("node_nagios");
 	}
 	// ATTRIBUTE Methods
 	public String get_PluginFilename(){

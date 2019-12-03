@@ -40,7 +40,6 @@ public class NagiosUtility {
 		String units = StringUtility.getUnits(valStr);
 		if (val != null){
 			AnalysisData ad = new AnalysisData(label,val);
-			ad.setUnits(units);
 			return ad;
 		}
 		return null;
